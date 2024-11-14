@@ -1,0 +1,212 @@
+/* Importing Techy Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Orbitron&display=swap');
+
+/* General Styles */
+body {
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+    font-family: 'Roboto Mono', monospace;
+    background-image: radial-gradient(circle at top left, #1a1a1a, #0d0d0d);
+}
+
+h1, h5 {
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+p, .lead {
+    color: #cccccc;
+}
+
+.card {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    color: #e0e0e0;
+}
+
+.card-header {
+    background-color: #1a1a1a;
+    border-bottom: 1px solid #333333;
+}
+
+.card-header h5 {
+    margin-bottom: 0.5rem;
+}
+
+.door {
+    width: 150px;
+    height: 100px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: #262626;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+/* Focus States for Accessibility */
+.door:focus {
+    outline: 3px solid #00ffcc;
+    outline-offset: 2px;
+}
+
+/* Hover Effects Enhancement */
+.door:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00ffcc;
+    background-color: #333333;
+}
+
+/* Correct Answer Styling */
+.alert.correct {
+    background-color: #004d40;
+    color: #b2dfdb;
+    border-color: #00796b;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/* Incorrect Answer Styling */
+.alert.incorrect {
+    background-color: #4a0000;
+    color: #ff9999;
+    border-color: #b71c1c;
+    box-shadow: 0 0 10px #ff1a75;
+}
+
+/* "Try Again" Button Styling */
+.try-again {
+    display: block;
+    width: 100%;
+    background-color: #262626;
+    color: #e0e0e0;
+    border: 1px solid #444444;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.try-again:hover {
+    background-color: #333333;
+    box-shadow: 0 0 15px #ff1a75;
+}
+
+/* Completion Message Styling */
+#completion-message {
+    padding: 2rem;
+    border: 2px solid #00ffcc;
+    border-radius: 1rem;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+#score-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+.alert {
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+    border: 1px solid #333333;
+}
+
+.feedback-panel {
+    background-color: #1a1a1a;
+    border-top: 1px solid #333333;
+    padding-top: 1rem;
+}
+
+/* Disable pointer events after answering */
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333333;
+    border-radius: 6px;
+    border: 3px solid #1a1a1a;
+}
+
+/* Button Colors */
+.btn-dark {
+    background-color: #333333;
+    border-color: #444444;
+    color: #e0e0e0;
+}
+
+.btn-dark:hover {
+    background-color: #262626;
+    border-color: #333333;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+.btn-secondary {
+    background-color: #444444;
+    border-color: #555555;
+    color: #e0e0e0;
+}
+
+.btn-secondary:hover {
+    background-color: #333333;
+    border-color: #444444;
+    box-shadow: 0 0 10px #ff1a75;
+}
+
+.btn-info {
+    background-color: #005f5f;
+    border-color: #007777;
+    color: #e0e0e0;
+}
+
+.btn-info:hover {
+    background-color: #004c4c;
+    border-color: #006666;
+    box-shadow: 0 0 10px #00ffff;
+}
+
+.btn-success {
+    background-color: #004d00;
+    border-color: #006600;
+    color: #e0e0e0;
+}
+
+.btn-success:hover {
+    background-color: #003d00;
+    border-color: #005500;
+    box-shadow: 0 0 10px #00ff00;
+}
+
+/* Header and Footer (if applicable) */
+header, footer {
+    background-color: #1a1a1a;
+    padding: 1rem;
+    color: #e0e0e0;
+}
+
+/* Links */
+a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00ffff;
+}
